@@ -6,7 +6,7 @@
                 <?php $loop = new WP_Query( array( 'post_type' => 'projects' , 'posts_per_page' => -1)); ?>
                 <?php if ( $loop->have_posts() ) : ?>
                     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                        <div class="cd-page-left-item">
+                        <div class="cd-page-left-item cd-archive-item">
                             <h3><a href="<?php the_permalink() ; ?>"><?php the_title() ; ?></a></h3>
                         </div>
                     <?php endwhile; ?>
